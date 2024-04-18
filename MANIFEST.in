@@ -1,2 +1,2 @@
 include requirements.txt
-recursive-include vallex/utils *
+recursive-include vallex *
