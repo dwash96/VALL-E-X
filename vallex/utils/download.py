@@ -26,7 +26,7 @@ def download_models_from_github():
 
         print("Downloading token list...")
         os.makedirs(with_base_path("utils/g2p"), exist_ok=True)
-        r = requests.get("https://raw.githubusercontent.com/dwash96/VALL-E-X/main/utils/g2p/bpe_69.json", stream=True)
+        r = requests.get("https://raw.githubusercontent.com/dwash96/VALL-E-X/main/vallex/utils/g2p/bpe_69.json", stream=True)
         path = with_base_path("utils/g2p/bpe_69.json")
         with open(path, 'wb') as f:
             total_length = int(r.headers.get('content-length'))
